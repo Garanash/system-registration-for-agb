@@ -1,0 +1,25 @@
+[project]
+name = "system-registration-for-agb"
+version = "0.1.0"
+description = "system registration and aithorization for agb"
+authors = [
+    {name = "andreydolgov",email = "dolgov_am@mail.ru"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard] (>=0.115.12,<0.116.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "pydantic-settings (>=2.8.1,<3.0.0)",
+    "sqlalchemy (>=2.0.40,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+
